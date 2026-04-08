@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Controls Glossary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #ffffff;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: #0078d4;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        textarea {
+            width: 100%;
+            height: 50px;
+            resize: vertical;
+        }
+
+        button {
+            padding: 10px 14px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 15px;
+            background-color: #0078d4;
+            color: #ffffff;
+        }
+
+        .formula {
+            font-family: Consolas, monospace;
+            font-size: 13px;
+            background: #f0f0f0;
+            padding: 6px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Project Controls – Terms & Definitions</h2>
+
+<table id="glossaryTable">
+    <thead>
+        <tr>
+            <th>Acronym</th>
+            <th>Full Form</th>
+            <th>Description / Notes</th>
+            <th>Formula</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr>
+            <td>FF</td>
+            <td>Fixed Fee</td>
+            <td><textarea>Contract with a fixed agreed fee</textarea></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>TP</td>
+            <td>Transfer Pricing</td>
+            <td><textarea>Pricing between legal entities</textarea></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>B&amp;L</td>
+            <td>Borrowed and Lend</td>
+            <td><textarea>Cost center to cost center billing</textarea></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>T&amp;M</td>
+            <td>Time and Materials</td>
+            <td><textarea>Billed based on time and material consumed</textarea></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>DLM</td>
+            <td>Direct Labour Multiplier</td>
+            <td><textarea>Used to calculate revenue from labour</textarea></td>
+            <td class="formula">Net Revenue / Raw Labour</td>
+        </tr>
+
+        <tr>
+            <td>DSO</td>
+            <td>Days of Sales Outstanding</td>
+            <td><textarea>Measures how quickly receivables are collected</textarea></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>ITD</td>
+            <td>Inception To Date</td>
+            <td><textarea>Cumulative data from project start</textarea></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>WBS</td>
+            <td>Work Breakdown Structure</td>
+            <td><textarea>Hierarchical decomposition of project scope</textarea></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>DOA</td>
+            <td>Delegation of Authority</td>
+            <td><textarea>Approval hierarchy and limits</textarea></td>
+            <td class="formula">Raw Labor = Fringe + Overhead</td>
+        </tr>
+
+        <tr>
+            <td>RFQ</td>
+            <td>Request for Qualification</td>
+            <td><textarea>Pre-qualification of vendors</textarea></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>RFP</td>
+            <td>Request for Proposal</td>
+            <td><textarea>Submitted with due date</textarea></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>BAFO</td>
+            <td>Best and Final Offer</td>
+            <td><textarea>Final negotiated offer</textarea></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>RBS</td>
+            <td>Resource Breakdown Structure</td>
+            <td><textarea>List of resources for planning, budgeting & forecasting</textarea></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>MSA</td>
+            <td>Master Service Agreement</td>
+            <td><textarea>Governing contract framework</textarea></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>KPI</td>
+            <td>Key Performance Indicator</td>
+            <td><textarea>Measures performance effectiveness</textarea></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>KRI</td>
+            <td>Key Risk Indicator</td>
+            <td><textarea>Shows good or bad trends using historical data</textarea></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>OTL</td>
+            <td>Oracle Time and Labor</td>
+            <td><textarea>Oracle time recording system</textarea></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>ETC</td>
+            <td>Estimate to Complete</td>
+            <td><textarea>Remaining cost to finish work</textarea></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>EAC</td>
+            <td>Estimate at Completion</td>
+            <td><textarea>Total forecast project cost</textarea></td>
+            <td class="formula">EAC = AC + ETC</td>
+        </tr>
+
+        <tr>
+            <td>Margin Variance</td>
+            <td></td>
+            <td><textarea>Difference between actual and expected margin</textarea></td>
+            <td class="formula">Actual Net Revenue − (Actual Raw Labour × Original Budget Multiplier)</td>
+        </tr>
+
+        <tr>
+            <td>Raw Cost</td>
+            <td></td>
+            <td colspan="2" class="formula">
+Raw Cost =  
+SUMX('Effort Report',  
+IF(Unit = HOURS or DAY → Burdened Cost / 2.1,  
+IF(Unit = CURRENCY → Quantity,  
+IF(Unit = EA → Burdened Cost,  
+IF(Unit = KM → Effort Invoice Currency))))
+            </td>
+        </tr>
+
+    </tbody>
+</table>
+
+<button onclick="exportToExcel()">Export to Excel</button>
+
+<script>
+function exportToExcel() {
+    const table = document.getElementById("glossaryTable");
+    let csv = [];
+
+    for (let row of table.rows) {
+        let cols = row.querySelectorAll("th, td, textarea");
+        let rowData = [];
+        cols.forEach(col => {
+            rowData.push(col.value || col.innerText.replace(/\n/g, " "));
+        });
+        csv.push(rowData.join(","));
+    }
+
+    let blob = new Blob([csv.join("\n")], { type: "text/csv" });
+    let link = document.createElement("a");
+    link.download = "Project_Glossary.csv";
+    link.href = window.URL.createObjectURL(blob);
+    link.click();
+}
+</script>
+
+</body>
+</html>
