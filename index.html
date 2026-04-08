@@ -3,255 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <title>Project Controls Glossary</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f6f8;
-            padding: 20px;
+            margin: 0;
+            padding: 30px;
+            line-height: 1.6;
         }
 
-        h2 {
-            text-align: center;
-            margin-bottom: 15px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
+        .container {
+            max-width: 1000px;
+            margin: auto;
             background: #ffffff;
+            padding: 25px 30px;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
         }
 
-        th, td {
-            border: 1px solid #ccc;
-            padding: 8px;
-            vertical-align: top;
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
         }
 
-        th {
-            background-color: #0078d4;
-            color: #ffffff;
-            text-align: left;
+        .term {
+            margin-bottom: 18px;
         }
 
-        textarea {
-            width: 100%;
-            height: 50px;
-            resize: vertical;
-        }
-
-        button {
-            padding: 10px 14px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            margin-top: 15px;
-            background-color: #0078d4;
-            color: #ffffff;
+        .term-title {
+            font-weight: bold;
+            color: #0078d4;
         }
 
         .formula {
+            margin-top: 6px;
+            padding: 8px;
+            background: #f1f1f1;
             font-family: Consolas, monospace;
             font-size: 13px;
-            background: #f0f0f0;
-            padding: 6px;
             border-radius: 4px;
         }
     </style>
 </head>
+
 <body>
 
-<h2>Project Controls – Terms & Definitions</h2>
+<div class="container">
 
-<table id="glossaryTable">
-    <thead>
-        <tr>
-            <th>Acronym</th>
-            <th>Full Form</th>
-            <th>Description / Notes</th>
-            <th>Formula</th>
-        </tr>
-    </thead>
-    <tbody>
+<h1>Project Controls – Terms & Definitions</h1>
 
-        <tr>
-            <td>FF</td>
-            <td>Fixed Fee</td>
-            <td><textarea>Contract with a fixed agreed fee</textarea></td>
-            <td></td>
-        </tr>
+<p class="term">
+    <span class="term-title">Fixed Fee (FF):</span>
+    A contract type where the service provider delivers the agreed scope of work for a fixed amount of compensation. The fee does not change based on actual costs incurred.
+</p>
 
-        <tr>
-            <td>TP</td>
-            <td>Transfer Pricing</td>
-            <td><textarea>Pricing between legal entities</textarea></td>
-            <td></td>
-        </tr>
+<p class="term">
+    <span class="term-title">Transfer Pricing (TP):</span>
+    A pricing mechanism used for transactions between different legal entities within the same organization to allocate costs and revenues appropriately.
+</p>
 
-        <tr>
-            <td>B&amp;L</td>
-            <td>Borrowed and Lend</td>
-            <td><textarea>Cost center to cost center billing</textarea></td>
-            <td></td>
-        </tr>
+<p class="term">
+    <span class="term-title">Borrowed and Lend (B&amp;L):</span>
+    An internal cost recovery process where one cost center provides resources or services to another and transfers the associated costs.
+</p>
 
-        <tr>
-            <td>T&amp;M</td>
-            <td>Time and Materials</td>
-            <td><textarea>Billed based on time and material consumed</textarea></td>
-            <td></td>
-        </tr>
+<p class="term">
+    <span class="term-title">Time and Materials (T&amp;M):</span>
+    A contract arrangement where billing is based on actual time worked and materials consumed during project execution.
+</p>
 
-        <tr>
-            <td>DLM</td>
-            <td>Direct Labour Multiplier</td>
-            <td><textarea>Used to calculate revenue from labour</textarea></td>
-            <td class="formula">Net Revenue / Raw Labour</td>
-        </tr>
+<p class="term">
+    <span class="term-title">Direct Labour Multiplier (DLM):</span>
+    A metric used to calculate revenue derived from direct labour costs.
+</p>
+<div class="formula">DLM = Net Revenue / Raw Labour</div>
 
-        <tr>
-            <td>DSO</td>
-            <td>Days of Sales Outstanding</td>
-            <td><textarea>Measures how quickly receivables are collected</textarea></td>
-            <td></td>
-        </tr>
+<p class="term">
+    <span class="term-title">Days of Sales Outstanding (DSO):</span>
+    A financial metric that measures the average number of days required to collect payment after invoicing.
+</p>
 
-        <tr>
-            <td>ITD</td>
-            <td>Inception To Date</td>
-            <td><textarea>Cumulative data from project start</textarea></td>
-            <td></td>
-        </tr>
+<p class="term">
+    <span class="term-title">Inception to Date (ITD):</span>
+    Cumulative project data measured from the start of the project up to the current reporting period.
+</p>
 
-        <tr>
-            <td>WBS</td>
-            <td>Work Breakdown Structure</td>
-            <td><textarea>Hierarchical decomposition of project scope</textarea></td>
-            <td></td>
-        </tr>
+<p class="term">
+    <span class="term-title">Work Breakdown Structure (WBS):</span>
+    A hierarchical breakdown of total project scope into manageable components used for planning, scheduling, and cost control.
+</p>
 
-        <tr>
-            <td>DOA</td>
-            <td>Delegation of Authority</td>
-            <td><textarea>Approval hierarchy and limits</textarea></td>
-            <td class="formula">Raw Labor = Fringe + Overhead</td>
-        </tr>
+<p class="term">
+    <span class="term-title">Delegation of Authority (DOA):</span>
+    A framework defining approval authority levels and financial limits within the organization.
+</p>
+<div class="formula">Raw Labour = Fringe + Overhead</div>
 
-        <tr>
-            <td>RFQ</td>
-            <td>Request for Qualification</td>
-            <td><textarea>Pre-qualification of vendors</textarea></td>
-            <td></td>
-        </tr>
+<p class="term">
+    <span class="term-title">Request for Qualification (RFQ):</span>
+    A document issued to evaluate vendor capability and pre‑qualify them before requesting detailed proposals.
+</p>
 
-        <tr>
-            <td>RFP</td>
-            <td>Request for Proposal</td>
-            <td><textarea>Submitted with due date</textarea></td>
-            <td></td>
-        </tr>
+<p class="term">
+    <span class="term-title">Request for Proposal (RFP):</span>
+    A formal request issued to vendors asking for detailed technical and commercial proposals by a specified due date.
+</p>
 
-        <tr>
-            <td>BAFO</td>
-            <td>Best and Final Offer</td>
-            <td><textarea>Final negotiated offer</textarea></td>
-            <td></td>
-        </tr>
+<p class="term">
+    <span class="term-title">Best and Final Offer (BAFO):</span>
+    The final negotiated proposal submitted by vendors after evaluation and clarification rounds.
+</p>
 
-        <tr>
-            <td>RBS</td>
-            <td>Resource Breakdown Structure</td>
-            <td><textarea>List of resources for planning, budgeting & forecasting</textarea></td>
-            <td></td>
-        </tr>
+<p class="term">
+    <span class="term-title">Resource Breakdown Structure (RBS):</span>
+    A classification of project resources such as labour, equipment, and materials, used for budgeting and forecasting.
+</p>
 
-        <tr>
-            <td>MSA</td>
-            <td>Master Service Agreement</td>
-            <td><textarea>Governing contract framework</textarea></td>
-            <td></td>
-        </tr>
+<p class="term">
+    <span class="term-title">Master Service Agreement (MSA):</span>
+    A governing contract that defines overarching legal and commercial terms for multiple projects or work orders.
+</p>
 
-        <tr>
-            <td>KPI</td>
-            <td>Key Performance Indicator</td>
-            <td><textarea>Measures performance effectiveness</textarea></td>
-            <td></td>
-        </tr>
+<p class="term">
+    <span class="term-title">Key Performance Indicator (KPI):</span>
+    A measurable value used to assess performance effectiveness against project or organizational objectives.
+</p>
 
-        <tr>
-            <td>KRI</td>
-            <td>Key Risk Indicator</td>
-            <td><textarea>Shows good or bad trends using historical data</textarea></td>
-            <td></td>
-        </tr>
+<p class="term">
+    <span class="term-title">Key Risk Indicator (KRI):</span>
+    A metric used to identify and monitor risk trends based on leading or historical indicators.
+</p>
 
-        <tr>
-            <td>OTL</td>
-            <td>Oracle Time and Labor</td>
-            <td><textarea>Oracle time recording system</textarea></td>
-            <td></td>
-        </tr>
+<p class="term">
+    <span class="term-title">Oracle Time and Labor (OTL):</span>
+    Oracle’s time recording system used for tracking employee work hours and feeding payroll, billing, and costing processes.
+</p>
 
-        <tr>
-            <td>ETC</td>
-            <td>Estimate to Complete</td>
-            <td><textarea>Remaining cost to finish work</textarea></td>
-            <td></td>
-        </tr>
+<p class="term">
+    <span class="term-title">Estimate to Complete (ETC):</span>
+    The projected remaining cost required to complete all outstanding project work.
+</p>
 
-        <tr>
-            <td>EAC</td>
-            <td>Estimate at Completion</td>
-            <td><textarea>Total forecast project cost</textarea></td>
-            <td class="formula">EAC = AC + ETC</td>
-        </tr>
+<p class="term">
+    <span class="term-title">Estimate at Completion (EAC):</span>
+    The total forecasted cost of the project upon completion.
+</p>
+<div class="formula">EAC = Actual Cost + Estimate to Complete</div>
 
-        <tr>
-            <td>Margin Variance</td>
-            <td></td>
-            <td><textarea>Difference between actual and expected margin</textarea></td>
-            <td class="formula">Actual Net Revenue − (Actual Raw Labour × Original Budget Multiplier)</td>
-        </tr>
+<p class="term">
+    <span class="term-title">Margin Variance:</span>
+    The difference between actual margin and the originally planned margin.
+</p>
+<div class="formula">
+Actual Net Revenue − (Actual Raw Labour × Original Budget Multiplier)
+</div>
 
-        <tr>
-            <td>Raw Cost</td>
-            <td></td>
-            <td colspan="2" class="formula">
-Raw Cost =  
-SUMX('Effort Report',  
-IF(Unit = HOURS or DAY → Burdened Cost / 2.1,  
-IF(Unit = CURRENCY → Quantity,  
-IF(Unit = EA → Burdened Cost,  
-IF(Unit = KM → Effort Invoice Currency))))
-            </td>
-        </tr>
+<p class="term">
+    <span class="term-title">Raw Cost:</span>
+    The base cost calculated from effort data, derived using different logic depending on unit type such as hours, currency, each, or distance.
+</p>
+<div class="formula">
+Raw Cost = SUMX(Effort Report logic based on unit type)
+</div>
 
-    </tbody>
-</table>
-
-<button onclick="exportToExcel()">Export to Excel</button>
-
-<script>
-function exportToExcel() {
-    const table = document.getElementById("glossaryTable");
-    let csv = [];
-
-    for (let row of table.rows) {
-        let cols = row.querySelectorAll("th, td, textarea");
-        let rowData = [];
-        cols.forEach(col => {
-            rowData.push(col.value || col.innerText.replace(/\n/g, " "));
-        });
-        csv.push(rowData.join(","));
-    }
-
-    let blob = new Blob([csv.join("\n")], { type: "text/csv" });
-    let link = document.createElement("a");
-    link.download = "Project_Glossary.csv";
-    link.href = window.URL.createObjectURL(blob);
-    link.click();
-}
-</script>
+</div>
 
 </body>
 </html>
